@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio02"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 05:37:15 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjMzOjM4ICI7MjE3MQ=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjM3OjE1ICI7MTsyMjc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite um numero: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero &gt;=0">
+                <then>
+                    <output expression="&quot;O numero inserido e positivo!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O numero inserido e negativo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

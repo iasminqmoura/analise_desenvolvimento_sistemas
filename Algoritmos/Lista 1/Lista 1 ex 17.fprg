@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 1 ex 17"/>
+        <attribute name="authors" value="rocam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 06:48:13 "/>
+        <attribute name="created" value="cm9jYW07UkVOQVRBOzIwMjUtMDQtMDg7IjA5OjQyOjQ3ICI7MjE3NQ=="/>
+        <attribute name="edited" value="cm9jYW07UkVOQVRBOzIwMjUtMDQtMTA7IjA2OjQ4OjEzICI7MzsyMjc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor, ced10, ced20, ced50, resto" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe o valor do saque (m&#250;ltiplo de 10):&quot;" newline="True"/>
+            <input variable="valor"/>
+            <if expression="valor % 10 == 0">
+                <then>
+                    <assign variable="ced50" expression="valor / 50"/>
+                    <assign variable="resto" expression="valor % 50"/>
+                    <assign variable="ced20" expression="resto / 20"/>
+                    <assign variable="resto" expression="resto % 20"/>
+                    <assign variable="ced10" expression="resto / 10"/>
+                    <assign variable="resto" expression="resto % 20"/>
+                </then>
+                <else>
+                    <output expression="&quot;Valor inv&#225;lido. Digite m&#250;ltiplo de 10.&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;C&#233;dulas de 50: &quot;" newline="True"/>
+            <output expression="ced50" newline="True"/>
+            <output expression="&quot;C&#233;dulas de 20: &quot;" newline="True"/>
+            <output expression="ced20" newline="True"/>
+            <output expression="&quot;C&#233;dulas de 10: &quot;" newline="True"/>
+            <output expression="ced10" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

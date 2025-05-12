@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio05"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 05:46:28 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjQzOjEyICI7MjE2NA=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjQ2OjI4ICI7MTsyMjgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="temperaturaCelsius, temperaturaConvertida" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira a temperatura em graus Celsius: &quot;" newline="True"/>
+            <input variable="temperaturaCelsius"/>
+            <assign variable="temperaturaConvertida" expression="(temperaturaCelsius * 1.8) + 32"/>
+            <output expression="&quot;A temperatura em graus Fahrenheit e de: &quot;" newline="True"/>
+            <output expression="temperaturaConvertida" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ex05"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 10:06:26 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA5OjI3OjEyICI7MjE3MA=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjEwOjA2OjI2ICI7MTsyMjcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcao" type="Integer" array="False" size=""/>
+            <declare name="numero1, numero2, calculo" type="Real" array="False" size=""/>
+            <assign variable="opcao" expression="0"/>
+            <while expression="opcao &lt;&gt; 5">
+                <output expression="&quot;Escolha uma das op&#231;&#245;es a seguir: &quot;" newline="True"/>
+                <output expression="&quot;1. M&#233;dia entre os n&#250;meros digitados&quot;" newline="True"/>
+                <output expression="&quot;2. Diferen&#231;a do maior pelo menor&quot;" newline="True"/>
+                <output expression="&quot;3. Produto entre os n&#250;meros digitados&quot;" newline="True"/>
+                <output expression="&quot;4. Divis&#227;o do primeiro pelo segundo&quot;" newline="True"/>
+                <output expression="&quot;5. Encerrar&quot;" newline="True"/>
+                <input variable="opcao"/>
+                <if expression="opcao = 1">
+                    <then>
+                        <output expression="&quot;Insira o primeiro n&#250;mero: &quot;" newline="True"/>
+                        <input variable="numero1"/>
+                        <output expression="&quot;Insira o segundo n&#250;mero: &quot;" newline="True"/>
+                        <input variable="numero2"/>
+                        <assign variable="calculo" expression="(numero1 + numero2) / 2"/>
+                        <output expression="&quot;A media dos n&#250;meros inseridos &#233;: &quot;" newline="False"/>
+                        <output expression="calculo" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="opcao = 2">
+                            <then>
+                                <output expression="&quot;Insira o primeiro n&#250;mero: &quot;" newline="True"/>
+                                <input variable="numero1"/>
+                                <output expression="&quot;Insira o segundo n&#250;mero: &quot;" newline="True"/>
+                                <input variable="numero2"/>
+                                <if expression="numero1 &gt; numero2">
+                                    <then>
+                                        <assign variable="calculo" expression="numero1 - numero2"/>
+                                        <output expression="&quot;A diferen&#231;a do maior pelo menor &#233;: &quot;" newline="False"/>
+                                        <output expression="calculo" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <assign variable="calculo" expression="numero2 - numero1"/>
+                                        <output expression="&quot;A diferen&#231;a do maior pelo menor &#233;: &quot;" newline="False"/>
+                                        <output expression="calculo" newline="True"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="opcao = 3">
+                                    <then>
+                                        <output expression="&quot;Insira o primeiro n&#250;mero: &quot;" newline="True"/>
+                                        <input variable="numero1"/>
+                                        <output expression="&quot;Insira o segundo n&#250;mero: &quot;" newline="True"/>
+                                        <input variable="numero2"/>
+                                        <assign variable="calculo" expression="numero1 * numero2"/>
+                                        <output expression="&quot;O produto dos n&#250;meros &#233;: &quot;" newline="False"/>
+                                        <output expression="calculo" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="opcao = 4">
+                                            <then>
+                                                <output expression="&quot;Insira o primeiro n&#250;mero: &quot;" newline="True"/>
+                                                <input variable="numero1"/>
+                                                <output expression="&quot;Insira o segundo n&#250;mero: &quot;" newline="True"/>
+                                                <input variable="numero2"/>
+                                                <if expression="numero2 = 0">
+                                                    <then>
+                                                        <output expression="&quot;Erro!!! Divis&#227;o por 0 n&#227;o &#233; permitida!!!&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <assign variable="calculo" expression="numero1 / numero2"/>
+                                                        <output expression="&quot;O valor de divis&#227;o do primeiro pelo segundo &#233;: &quot;" newline="False"/>
+                                                        <output expression="calculo" newline="True"/>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;PROGRAMA ENCERRADO&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

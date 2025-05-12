@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio07"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 06:03:34 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjQ5OjExICI7MjE2OQ=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjAzOjM0ICI7MTsyMjcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2, numero3, media, referencia" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira um numero de referencia para media: &quot;" newline="True"/>
+            <input variable="referencia"/>
+            <output expression="&quot;Insira o primeiro numero para calculo da media: &quot;" newline="True"/>
+            <input variable="numero1"/>
+            <output expression="&quot;Insira o segundo numero para calculo da media: &quot;" newline="True"/>
+            <input variable="numero2"/>
+            <output expression="&quot;Insira o terceiro numero para calculo da media: &quot;" newline="True"/>
+            <input variable="numero3"/>
+            <assign variable="media" expression="(numero1 + numero2 + numero3) / 3"/>
+            <output expression="&quot;A media dos numeros inseridos e: &quot;" newline="False"/>
+            <output expression="media" newline="True"/>
+            <if expression="referencia &gt; media">
+                <then>
+                    <output expression="&quot;A referencia e maior que a media&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="referencia &lt; media">
+                        <then>
+                            <output expression="&quot;A referencia e menor que a media&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="referencia == media">
+                                <then>
+                                    <output expression="&quot;A media e a referencia sao iguais&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;ta chapano?&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

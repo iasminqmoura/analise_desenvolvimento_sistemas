@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio06"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 05:48:53 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjQ2OjQxICI7MjE2OQ=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjQ4OjUzICI7MTsyMjgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira um numero: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero % 2 == 0">
+                <then>
+                    <output expression="&quot;O numero inserido e par!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O numero inserido e impar!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

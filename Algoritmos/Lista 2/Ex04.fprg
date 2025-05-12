@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ex04"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 09:26:47 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA5OjIxOjAwICI7MjE2MQ=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA5OjI2OjQ3ICI7MTsyMjg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2, numero3, maior" type="Integer" array="False" size=""/>
+            <output expression="&quot;Determinar o maior dentre 3 n&#250;meros&quot;" newline="True"/>
+            <output expression="&quot;Insira o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="numero1"/>
+            <output expression="&quot;Insira o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="numero2"/>
+            <output expression="&quot;Insira o terceiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="numero3"/>
+            <if expression="numero1 &gt;= numero2 &amp;&amp; numero1 &gt;= numero3">
+                <then>
+                    <output expression="&quot;O maior n&#250;mero inserido &#233;: &quot;" newline="True"/>
+                    <output expression="numero1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numero2 &gt;= numero1 &amp;&amp; numero2 &gt;= numero3">
+                        <then>
+                            <output expression="&quot;O maior n&#250;mero inserido &#233;: &quot;" newline="True"/>
+                            <output expression="numero2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;O maior n&#250;mero inserido &#233;: &quot;" newline="True"/>
+                            <output expression="numero3" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

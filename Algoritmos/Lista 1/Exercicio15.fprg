@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio15"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 06:44:51 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjQxOjUwICI7MjE2NQ=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjQ0OjUxICI7MTsyMjc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira as notas para c&#225;culo da m&#233;dia ponderada&quot;" newline="True"/>
+            <output expression="&quot;Nota 1: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Nota 2: &quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Nota 3: &quot;" newline="True"/>
+            <input variable="nota3"/>
+            <assign variable="media" expression="(nota1 * 2 + nota2 * 3 + nota3 * 5) / 10"/>
+            <output expression="&quot;A m&#233;dia ponderada das notas &#233;: &quot;" newline="False"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

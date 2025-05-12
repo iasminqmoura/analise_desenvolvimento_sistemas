@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio01"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 05:33:33 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjE0OjIxICI7MjE2Mg=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjMzOjMzICI7MTsyMjc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um numero:&quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="numero" expression="numero*2"/>
+            <output expression="&quot;O dobro do numero e: &quot;" newline="True"/>
+            <output expression="numero" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

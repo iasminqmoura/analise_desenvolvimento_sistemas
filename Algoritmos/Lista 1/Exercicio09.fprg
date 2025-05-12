@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio09"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 06:21:32 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjE0OjMxICI7MjE2NA=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjIxOjMyICI7MTsyMjcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o ano para verificar se e bissexto: &quot;" newline="True"/>
+            <input variable="ano"/>
+            <if expression="ano % 4 == 0">
+                <then>
+                    <if expression="ano % 100 == 0">
+                        <then>
+                            <if expression="ano % 400 == 0">
+                                <then>
+                                    <output expression="&quot;O ano e bissexto!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;O ano nao e bissexto!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;O ano e bissexto!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;O ano nao e bissexto!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

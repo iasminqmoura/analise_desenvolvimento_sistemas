@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ex03"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 09:20:55 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA5OjA5OjQyICI7MjE3Mw=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA5OjIwOjU1ICI7MTsyMjc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2, maior" type="Real" array="False" size=""/>
+            <output expression="&quot;Vamos verificar qual n&#250;mero &#233; o maior&quot;" newline="True"/>
+            <output expression="&quot;Insira o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="numero1"/>
+            <output expression="&quot;Escreva o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="numero2"/>
+            <if expression="numero1 &lt; numero2">
+                <then>
+                    <if expression="numero1 = numero2">
+                        <then>
+                            <output expression="&quot;Os n&#250;meros s&#227;o iguais!!!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;O n&#250;mero &quot;" newline="False"/>
+                            <output expression="numero1" newline="False"/>
+                            <output expression="&quot; &#233; menor!!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="numero1 = numero2">
+                        <then>
+                            <output expression="&quot;Os n&#250;meros s&#227;o iguais!!!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;O n&#250;mero &quot;" newline="False"/>
+                            <output expression="numero2" newline="False"/>
+                            <output expression="&quot; &#233; menor!!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

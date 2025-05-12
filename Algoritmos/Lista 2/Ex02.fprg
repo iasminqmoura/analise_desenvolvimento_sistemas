@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ex02"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 08:44:15 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA4OjMxOjI1ICI7MjE2OA=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA4OjQ0OjE1ICI7MjsyMjgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe a primeira nota: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Informe a segunda nota: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="media" expression="( n1 + n2 ) / 2"/>
+            <output expression="&quot;A sua m&#233;dia &#233;: &quot;" newline="False"/>
+            <output expression="media" newline="True"/>
+            <if expression="(media &gt;= 7) &amp;&amp; (media &lt;= 10)">
+                <then>
+                    <output expression="&quot;APROVADO!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(media &gt;= 3) &amp;&amp; (media &lt; 7)">
+                        <then>
+                            <output expression="&quot;Precisa fazer o EXAME&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(media &gt;= 0) &amp;&amp; (media &lt; 3)">
+                                <then>
+                                    <output expression="&quot;REPROVADO!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;RAPAZ CE CONSEGUIU O IMPOSSIVEL, UMA NOTA NEGATIVA&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

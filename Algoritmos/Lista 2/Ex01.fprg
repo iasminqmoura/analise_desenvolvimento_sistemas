@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ex01"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 08:31:19 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA4OjI2OjA1ICI7MjE3MA=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA4OjMxOjE5ICI7MTsyMjc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, n4, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe a nota da primeira prova: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Informe a nota da segunda prova: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Informe a nota da terceira prova: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <output expression="&quot;Informe a nota da quarta prova: &quot;" newline="True"/>
+            <input variable="n4"/>
+            <assign variable="media" expression="( n1 + n2 + n3 + n4 ) / 4"/>
+            <output expression="&quot;A sua m&#233;dia &#233;: &quot;" newline="True"/>
+            <output expression="media" newline="True"/>
+            <if expression="media &gt; 7">
+                <then>
+                    <output expression="&quot;APROVADO!!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

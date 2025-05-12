@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio04"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 05:42:48 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjQwOjM1ICI7MjE2Ng=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjQyOjQ4ICI7MTsyMjgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira a idade da pessoa: &quot;" newline="True"/>
+            <input variable="idade"/>
+            <if expression="idade &gt;= 18">
+                <then>
+                    <output expression="&quot;A pessoa &#233; maior de idade!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;A pessoa &#233; menor de idade!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

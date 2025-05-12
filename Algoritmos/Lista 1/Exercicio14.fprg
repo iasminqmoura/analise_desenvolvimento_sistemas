@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio14"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 06:41:46 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjM2OjA2ICI7MjE3MA=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjQxOjQ2ICI7MTsyMjc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="peso, altura, imc" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o peso da pessoa: &quot;" newline="True"/>
+            <input variable="peso"/>
+            <output expression="&quot;Insira a altura da pessoa: &quot;" newline="True"/>
+            <input variable="altura"/>
+            <assign variable="imc" expression="peso / (altura * altura)"/>
+            <if expression="imc &lt; 18.5">
+                <then>
+                    <output expression="&quot;Seu IMC atual e: &quot;" newline="False"/>
+                    <output expression="imc" newline="True"/>
+                    <output expression="&quot;Voc&#234; est&#225; abaixo do peso!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="imc &lt; 25">
+                        <then>
+                            <output expression="&quot;Seu IMC atual e: &quot;" newline="False"/>
+                            <output expression="imc" newline="True"/>
+                            <output expression="&quot;Parab&#233;ns, voc&#234; est&#225; no peso normal!!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="imc &lt; 30">
+                                <then>
+                                    <output expression="&quot;Seu IMC atual e: &quot;" newline="False"/>
+                                    <output expression="imc" newline="True"/>
+                                    <output expression="&quot;Voc&#234; est&#225; com sobrepeso!!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Seu IMC atual e: &quot;" newline="False"/>
+                                    <output expression="imc" newline="True"/>
+                                    <output expression="&quot;Voc&#234; est&#225; obeso!!!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

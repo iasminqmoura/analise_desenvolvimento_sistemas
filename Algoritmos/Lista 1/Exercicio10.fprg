@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio10"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 06:27:10 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjIxOjQwICI7MjE2Mg=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjI3OjEwICI7MTsyMjcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="letra" type="String" array="False" size=""/>
+            <output expression="&quot;Insira uma letra para verificar se e vogal ou consoante: &quot;" newline="True"/>
+            <input variable="letra"/>
+            <if expression="letra = &quot;a&quot; or letra = &quot;A&quot; or&#13;&#10;letra = &quot;e&quot; or letra = &quot;E&quot; or&#13;&#10;letra = &quot;i&quot; or letra = &quot;I&quot; or&#13;&#10;letra = &quot;o&quot; or letra = &quot;O&quot; or&#13;&#10;letra = &quot;U&quot; or letra = &quot;U&quot;">
+                <then>
+                    <output expression="&quot;A letra inserida e uma vogal!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;A letra inserida e uma consoante!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

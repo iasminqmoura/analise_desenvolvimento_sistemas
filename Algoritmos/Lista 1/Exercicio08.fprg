@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio08"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 06:13:12 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjA0OjU5ICI7MjE3Mw=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA2OjEzOjEyICI7MTsyMjcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura, area" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o valor referente a base do triangulo: &quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;Insira o valor referente a altura do triangulo: &quot;" newline="True"/>
+            <input variable="altura"/>
+            <assign variable="area" expression="(base * altura) / 2"/>
+            <output expression="&quot;A area do triangulo e: &quot;" newline="False"/>
+            <output expression="area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

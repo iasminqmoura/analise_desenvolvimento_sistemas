@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exerc&#237;cio 2"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-24 07:41:39 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMjQ7IjA3OjMxOjE0ICI7MjE3MA=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMjQ7IjA3OjQxOjM5ICI7MTsyMjg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salarioBruto, desconto, porcentagem, salarioLiquido" type="Real" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Insira o nome do funcion&#225;rio: &quot;" newline="False"/>
+            <input variable="nome"/>
+            <output expression="&quot;Insira o sal&#225;rio bruto: &quot;" newline="False"/>
+            <input variable="salarioBruto"/>
+            <output expression="&quot;Insira a porcentagem de desconto do INSS: &quot;" newline="True"/>
+            <input variable="porcentagem"/>
+            <assign variable="desconto" expression="(porcentagem/100) * salarioBruto"/>
+            <assign variable="salarioLiquido" expression="salarioBruto - desconto"/>
+            <output expression="nome" newline="False"/>
+            <output expression="&quot;seu sal&#225;rio l&#237;quido ap&#243;s desconto &#233; R$&quot;" newline="False"/>
+            <output expression="salarioLiquido" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

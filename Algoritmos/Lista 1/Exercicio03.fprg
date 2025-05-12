@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio03"/>
+        <attribute name="authors" value="iasmi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 05:40:23 "/>
+        <attribute name="created" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjM3OjE4ICI7MjE3Mw=="/>
+        <attribute name="edited" value="aWFzbWk7SUFTTUlOOzIwMjUtMDQtMTA7IjA1OjQwOjIzICI7MTsyMjcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2, soma" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o primeiro numero: &quot;" newline="True"/>
+            <input variable="numero1"/>
+            <output expression="&quot;Insira o segundo numero: &quot;" newline="True"/>
+            <input variable="numero2"/>
+            <assign variable="soma" expression="numero1 + numero2"/>
+            <output expression="&quot;A soma dos dois numeros reais inseridos e: &quot;" newline="True"/>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

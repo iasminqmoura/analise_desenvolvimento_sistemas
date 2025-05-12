@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 1 ex 18"/>
+        <attribute name="authors" value="rocam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 10:05:00 "/>
+        <attribute name="created" value="cm9jYW07UkVOQVRBOzIwMjUtMDQtMDg7IjA5OjU2OjE1ICI7MjE3NQ=="/>
+        <attribute name="edited" value="cm9jYW07UkVOQVRBOzIwMjUtMDQtMDg7IjA5OjU5OjI5ICI7MTtyb2NhbTtSRU5BVEE7MjAyNS0wNC0wODsiMDg6NDI6MTkgIjs0NTIz"/>
+        <attribute name="edited" value="cm9jYW07UkVOQVRBOzIwMjUtMDQtMDg7IjEwOjA1OjAwICI7MTsyMjYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salarioL, salarioB, INSS, FGTS, IR" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe aqui o seu sal&#225;rio Bruto para calculo: &quot;" newline="True"/>
+            <input variable="salarioB"/>
+            <assign variable="INSS" expression="salarioB * 0.08"/>
+            <output expression="&quot;O valor do INSS &#233;: &quot;" newline="True"/>
+            <output expression="INSS" newline="True"/>
+            <assign variable="FGTS" expression="salarioB * 0.11"/>
+            <output expression="&quot;O valor do FGTS &#233;: &quot;" newline="True"/>
+            <output expression="FGTS" newline="True"/>
+            <if expression="salarioB &gt;= 3000">
+                <then>
+                    <assign variable="IR" expression="salarioB * 0.05"/>
+                </then>
+                <else>
+                    <assign variable="IR" expression="0"/>
+                </else>
+            </if>
+            <output expression="&quot;O valor do imposto de renda &#233;: &quot;" newline="True"/>
+            <output expression="IR" newline="True"/>
+            <assign variable="salarioL" expression="salarioB - INSS - IR"/>
+            <output expression="&quot;O seu Sal&#225;rio para recebimento (liquido) &#233; de: &quot;" newline="True"/>
+            <output expression="salarioL" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
